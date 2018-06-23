@@ -18,9 +18,6 @@ addEventListener('DOMContentLoaded', function () {
         document.body.appendChild(divBox);
         divBox.className = 'blackBox';
         divBox.style.cssFloat = 'left';
-        divBox.style.border = '10px';
-        divBox.style.borderColor = 'white';
-        
         
         let boxId = document.createElement('p');
         divBox.appendChild(boxId);
