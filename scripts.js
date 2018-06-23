@@ -18,33 +18,41 @@ addEventListener('DOMContentLoaded', function () {
         document.body.appendChild(divBox);
         divBox.className = 'blackBox';
         divBox.style.cssFloat = 'left';
+        divBox.style.border = '10px';
+        divBox.style.borderColor = 'white';
+        
+        
+        let boxId = document.createElement('p');
+        divBox.appendChild(boxId);
+
+        let a = count++
+        divBox.id = a;
+        let textId = document.createTextNode('id = ');
+        boxId.appendChild(textId);
+        let text = document.createTextNode(divBox.id);
+        boxId.appendChild(text);
+        
 
         divBox.addEventListener('click', function () {
             divBox.style.background = randomColor(colors);
+      
         })
 
-        let a = count++
-        divBox.id =  a;
-        
-        let text = document.createTextNode(divBox.id);
-        divBox.appendChild(text);
-
+        console.log(text.id);
         console.log(divBox.id)
-
-        text.id = 'textId';
 
         console.log(a);
 
         divBox.addEventListener('dblclick', function () {
-           
-           
+
+
         })
     })
 
 
 
 
-    let colors = ['hotpink', 'red', 'orange', 'mediumturquoise', 'green', 'blue', 'indigo', 'purple'];
+    let colors = ['hotpink', 'red', 'darkorange', 'limegreen', 'gold', 'royalblue', 'indigo', 'mediumpurple'];
 
     function randomColor(colors) {
         return colors[Math.floor(Math.random() * colors.length)];

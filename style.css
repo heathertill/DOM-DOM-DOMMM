@@ -1,6 +1,10 @@
 
-div:hover {
-    color: yellow;
+p {
+    color: transparent;
+}
+
+p:hover {
+    color: cyan;
 }
 
 .blackBox {
@@ -11,5 +15,7 @@ div:hover {
     padding-top: 4em;
     padding-bottom: 4em;
 };
+
+
 
 
